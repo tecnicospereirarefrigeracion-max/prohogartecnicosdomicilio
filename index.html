@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProHogar Técnicos A&F | Reparación en Pereira</title>
+  <style>
+    :root {
+      --royal: #1a3fb8; --royal-dark: #102a8a; --royal-deeper: #0a1d6b;
+      --accent: #0ea5e9; --accent2: #38bdf8; --gold: #f59e0b;
+      --white: #ffffff; --off-white: #f0f5ff;
+      --text: #1e2a4a; --text-light: #5a6a8a;
+      --shadow: 0 8px 40px rgba(26,63,184,0.18);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family: 'Segoe UI', Roboto, sans-serif; background:var(--off-white);color:var(--text);overflow-x:hidden;}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.7rem 2rem;display:flex;align-items:center;justify-content:center;background:rgba(10,29,107,.97);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.3);}
+    .nav-logo{font-weight:900;font-size:1.2rem;color:var(--white);text-decoration:none;text-align:center;}
+    .nav-logo span{color:var(--accent2);}
+
+    header{position:relative;background:linear-gradient(135deg,var(--royal-deeper) 0%,var(--royal) 55%,var(--accent) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8rem 1.5rem 6rem;overflow:hidden;}
+    .hero-inner{position:relative;z-index:1;max-width:900px;width:100%;}
+    .hero-badge{display:inline-block;background:var(--gold);color:#1a1000;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem 1.2rem;border-radius:999px;margin-bottom:1.2rem;}
+    .hero-title{font-weight:900;font-size:clamp(2rem,6vw,3.5rem);color:var(--white);line-height:1.15;margin-bottom:1.5rem;}
+    .hero-title span{color:var(--accent2);display:block;font-size:0.7em;margin-top:10px;}
+    .hero-location{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:rgba(255,255,255,.9);margin-bottom:2rem;}
+
+    .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;font-size:1.1rem;padding:1rem 2.2rem;border-radius:999px;text-decoration:none;cursor:pointer;border:none;transition:transform .18s ease,box-shadow .18s ease;}
+    .btn-whatsapp{background:#25D366;color:#fff;box-shadow:0 6px 28px rgba(37,211,102,.5);}
+    .btn:hover{transform:translateY(-3px) scale(1.03);}
+
+    .trust-bar{background:var(--white);padding:1.5rem;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:1.5rem;box-shadow:0 2px 20px rgba(26,63,184,.1);}
+    .trust-item{font-weight:700;font-size:.85rem;color:var(--royal);text-transform:uppercase;}
+
+    section{padding:5rem 1.5rem;}
+    .container{max-width:1100px;margin:0 auto;text-align:center;}
+    .section-title{font-weight:900;font-size:2.2rem;color:var(--royal-dark);margin-bottom:2.5rem;}
+
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+    .service-card{background:var(--white);border-radius:20px;padding:2.5rem 1.8rem;box-shadow:0 4px 20px rgba(26,63,184,.09);transition:transform .28s ease;}
+    .service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow);}
+    .service-icon{font-size:3rem;margin-bottom:1rem;display:block;}
+    .service-name{font-weight:800;font-size:1.2rem;color:var(--royal-dark);margin-bottom:.8rem;}
+    .service-desc{font-size:.95rem;color:var(--text-light);line-height:1.6;}
+
+    .free-banner{background:linear-gradient(135deg,var(--royal) 0%,var(--accent) 100%);border-radius:24px;padding:3rem 2rem;color:white;margin-top:4rem;box-shadow:var(--shadow);}
+    .free-badge{background:var(--gold);color:#1a1000;font-weight:900;padding:.6rem 1.2rem;border-radius:10px;display:inline-block;margin-bottom:1rem;}
+
+    footer{background:var(--royal-deeper);color:white;text-align:center;padding:4rem 1.5rem;}
+    .sticky-cta{position:fixed;bottom:1.8rem;right:1.5rem;z-index:999;}
+    .sticky-wa{background:#25D366;color:white;padding:1rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:bold;box-shadow:0 6px 24px rgba(0,0,0,0.3);display:flex;align-items:center;gap:10px;}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">ProHogar Técnicos <span>A&F</span></a>
+</nav>
+
+<header>
+  <div class="hero-inner">
+    <div class="hero-badge">⭐ Servicio Técnico Multimarcas</div>
+    <h1 class="hero-title">Reparación Profesional de<span>Neveras · Lavadoras · Calentadores</span></h1>
+    <div class="hero-location">📍 Pereira · Dosquebradas · Santa Rosa de Cabal</div>
+    <br>
+    <a href="https://wa.me/573016158158?text=Hola%20ProHogar%2C%20necesito%20un%20servicio%20técnico" class="btn btn-whatsapp">Agendar por WhatsApp</a>
+  </div>
+</header>
+
+<div class="trust-bar">
+  <div class="trust-item">🛡️ Trabajo Garantizado</div>
+  <div class="trust-item">🔍 Revisión $0 al Reparar</div>
+  <div class="trust-item">⚡ Atención Hoy Mismo</div>
+</div>
+
+<section id="servicios">
+  <div class="container">
+    <h2 class="section-title">Nuestros Servicios Especializados</h2>
+    <div class="services-grid">
+      <div class="service-card"><span class="service-icon">🧊</span><div class="service-name">Neveras y Nevecones</div><p class="service-desc">Reparación de fugas, carga de gas y fallas de enfriamiento.</p></div>
+      <div class="service-card"><span class="service-icon">🫧</span><div class="service-name">Lavadoras</div><p class="service-desc">Mantenimiento preventivo y corrección de ruidos o fallas de ciclo.</p></div>
+      <div class="service-card"><span class="service-icon">🔥</span><div class="service-name">Calentadores a Gas</div><p class="service-desc">Técnicos expertos en calentadores de paso y acumulación.</p></div>
+    </div>
+
+    <div class="free-banner">
+      <div class="free-badge">¡BENEFICIO EXCLUSIVO!</div>
+      <h3>Si realizas el arreglo con nosotros...</h3>
+      <p style="font-size: 1.2rem; margin-top: 10px;">¡La revisión técnica NO tiene costo!</p>
+      <br>
+      <a href="tel:+573016158158" class="btn" style="background:white; color:var(--royal);">Llamar: 301 615 8158</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>ProHogar Técnicos A&F</strong></p>
+  <p>Pereira - Risaralda</p>
+  <p style="margin-top:1rem; opacity:0.7;">Atención: Lunes a Sábado 7:00 AM - 7:00 PM</p>
+</footer>
+
+<div class="sticky-cta">
+  <a href="https://wa.me/573016158158" class="sticky-wa">
+    <span>💬 ¡Escríbenos!</span>
+  </a>
+</div>
+
+</body>
+</html>
