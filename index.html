@@ -200,4 +200,274 @@
     @keyframes bouncePulse{0%,100%{transform:translateY(0) scale(1);box-shadow:0 6px 24px rgba(37,211,102,.5);}40%{transform:translateY(-8px) scale(1.05);box-shadow:0 16px 36px rgba(37,211,102,.75);}60%{transform:translateY(-4px) scale(1.02);}}
     @keyframes vibrate{0%,85%,100%{transform:rotate(0deg);}87%{transform:rotate(-9deg);}89%{transform:rotate(9deg);}91%{transform:rotate(-6deg);}93%{transform:rotate(6deg);}95%{transform:rotate(-3deg);}97%{transform:rotate(3deg);}}
     .sticky-wa::before{content:'';position:absolute;inset:0;border-radius:999px;border:3px solid rgba(37,211,102,.65);animation:ringPulse 2.2s ease-out 2s infinite;}
-    @keyframes ringPulse{0%{transform:scale(1);opacity:.
+    @keyframes ringPulse{0%{transform:scale(1);opacity:.9;}100%{transform:scale(1.6);opacity:0;}}
+    .sticky-btn:hover{transform:scale(1.1)!important;filter:brightness(1.1);}
+    .sticky-btn:active{transform:scale(.94)!important;}
+    .sticky-label{font-size:.82rem;}
+    @media(max-width:640px){
+      .sticky-label{display:none;}
+      .sticky-btn{padding:.9rem;border-radius:50%;}
+    }
+
+    footer{background:var(--royal-deeper);color:rgba(255,255,255,.7);text-align:center;padding:2.8rem 1.5rem;font-size:.9rem;}
+    footer strong{color:var(--white);}
+    footer a{color:var(--accent2);text-decoration:none;}
+    .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:1rem;}
+    .footer-links a{color:rgba(255,255,255,.5);font-size:.82rem;}
+    .footer-links a:hover{color:var(--accent2);}
+
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-28px);}to{opacity:1;transform:translateY(0);}}
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity .65s ease,transform .65s ease;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#" class="nav-brand">
+    <span class="nav-logo">ProHogar Técnicos <span>A&amp;F</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#cobertura">Cobertura</a></li>
+    <li><a href="#testimonios">Opiniones</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#faq">Preguntas</a></li>
+    <li><a href="#horario">Horario</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">⭐ Servicio Técnico Certificado · Multimarcas</div>
+      <h1 class="hero-title">Reparación y Mantenimiento<br/><span>Neveras · Enfriadores<br/>Lavadoras · Calentadores</span></h1>
+      <div class="hero-location">📍 Pereira · Dosquebradas · Santa Rosa de Cabal</div>
+      <div class="hero-cta-group">
+        <a href="https://wa.me/573016158158?text=Hola%20ProHogar%20T%C3%A9cnicos%20A%26F%2C%20necesito%20un%20servicio%20t%C3%A9cnico." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <span class="pulse-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.552 4.103 1.516 5.836L.057 23.54a.75.75 0 0 0 .918.918l5.695-1.459A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.937 0-3.758-.524-5.32-1.437l-.381-.224-3.944 1.011 1.03-3.853-.244-.396A9.964 9.964 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </span>
+          WhatsApp Directo
+        </a>
+        <a href="tel:+573016158158" class="btn btn-call">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Llamar Ahora
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">▾</div>
+</header>
+
+<div class="trust-bar">
+  <div class="trust-item">🛡️ Trabajo Garantizado</div>
+  <div class="trust-item">🔍 Revisión sin costo al arreglar</div>
+  <div class="trust-item">🏠 Servicio a Domicilio</div>
+  <div class="trust-item">⚡ Atención el Mismo Día</div>
+  <div class="trust-item">📅 Lun–Sáb · 7am–7pm</div>
+</div>
+
+<div class="wave" style="background:var(--off-white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="#ffffff" d="M0,30 C360,70 1080,-10 1440,30 L1440,0 L0,0 Z"/></svg></div>
+
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal"><div class="stat-num" data-target="1000">0</div><div class="stat-label">Equipos Reparados</div></div>
+    <div class="stat-item reveal"><div class="stat-num" data-target="15">0</div><div class="stat-label">Años de Experiencia</div></div>
+    <div class="stat-item reveal"><div class="stat-num" data-target="3">0</div><div class="stat-label">Ciudades Atendidas</div></div>
+    <div class="stat-item reveal"><div class="stat-num" data-target="98">0</div><div class="stat-label">% Clientes Satisfechos</div></div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--off-white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="var(--off-white)" d="M0,30 C360,-10 1080,70 1440,30 L1440,60 L0,60 Z"/></svg></div>
+
+<section id="servicios" style="background:var(--off-white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Nuestros Servicios</p>
+      <h2 class="section-title">Especialistas en reparación<br/>de electrodomésticos en Pereira</h2>
+      <p class="section-desc">Técnicos expertos con herramientas especializadas para diagnosticar y reparar tu equipo de forma rápida y eficiente.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal"><span class="service-icon">🧊</span><div class="service-name">Neveras</div><p class="service-desc">¿La nevera no enfría o dejó de congelar?</p><span class="service-tag">Todas las marcas</span></div>
+      <div class="service-card reveal"><span class="service-icon">❄️</span><div class="service-name">Nevecon</div><p class="service-desc">Mantenimiento, reparación y recarga de gas refrigerante. Diagnóstico completo.</p><span class="service-tag">No-Frost · Ciclo</span></div>
+      <div class="service-card reveal"><span class="service-icon">🌡️</span><div class="service-name">Enfriadores</div><p class="service-desc">Vitrinas refrigeradas y equipos de frío comercial y doméstico.</p><span class="service-tag">Dom. y Comercial</span></div>
+      <div class="service-card reveal"><span class="service-icon">🫧</span><div class="service-name">Lavadoras</div><p class="service-desc">¿Lavadora con fallas? ¿No bota el agua o presenta códigos de error, entre otros?</p><span class="service-tag">Frontal · Superior</span></div>
+      <div class="service-card reveal"><span class="service-icon">🔥</span><div class="service-name">Calentadores a Gas</div><p class="service-desc">Mantenimiento y reparación de calentadores de paso a gas natural y propano.</p><span class="service-tag">Gas Natural · Propano</span></div>
+    </div>
+    <div class="free-banner reveal">
+      <div class="free-badge">✅ SIN COSTO DE REVISIÓN</div>
+      <div class="free-text">
+        <h3>El técnico revisa y si decide hacer el arreglo con nosotros, la revisión no tiene costo</h3>
+        <p>Coordinamos la visita, el técnico revisa el equipo y si decide hacer el arreglo con nosotros, <strong style="color:#fff;">la revisión no tiene costo.</strong></p>
+      </div>
+      <a href="https://wa.me/573016158158?text=Hola%2C%20quiero%20agendar%20una%20visita." target="_blank" rel="noopener" class="btn btn-whatsapp" style="flex-shrink:0;">Agendar Visita</a>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--off-white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="#ffffff" d="M0,40 C480,0 960,80 1440,40 L1440,0 L0,0 Z"/></svg></div>
+
+<section id="cobertura" style="background:var(--white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Zona de Cobertura</p>
+      <h2 class="section-title">Cobertura en Risaralda</h2>
+      <p class="section-desc">Nos desplazamos hasta tu casa sin costo adicional en estas ciudades.</p>
+    </div>
+    <div class="coverage-grid">
+      <div class="coverage-card reveal"><span class="coverage-icon">🏙️</span><div class="coverage-city">Pereira</div><p class="coverage-desc">Todas las comunas y barrios de Pereira. Atención el mismo día.</p></div>
+      <div class="coverage-card reveal"><span class="coverage-icon">🌆</span><div class="coverage-city">Dosquebradas</div><p class="coverage-desc">Cobertura total en Dosquebradas. Respuesta rápida y oportuna.</p></div>
+      <div class="coverage-card reveal"><span class="coverage-icon">🏘️</span><div class="coverage-city">Santa Rosa de Cabal</div><p class="coverage-desc">Servicio técnico en Santa Rosa. Consulta disponibilidad del día.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="var(--off-white)" d="M0,20 C360,60 1080,-20 1440,20 L1440,60 L0,60 Z"/></svg></div>
+
+<section id="testimonios" style="background:var(--off-white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Lo que dicen nuestros clientes</p>
+      <h2 class="section-title">Opiniones reales,<br/>clientes satisfechos</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">Me arreglaron la nevera el mismo día que llamé. El técnico llegó puntual, explicó todo claramente y el precio fue muy justo. ¡Excelente servicio!</p><div class="testimonial-author"><div class="author-avatar">LM</div><div><div class="author-name">Luz Marina G.</div><div class="author-loc">📍 Pereira, Cuba</div></div></div></div>
+      <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">El calentador no prendía hace días. Llegaron rápido, lo dejaron como nuevo. No me cobraron la revisión. 100% recomendados.</p><div class="testimonial-author"><div class="author-avatar">JR</div><div><div class="author-name">Jhon Ramírez</div><div class="author-loc">📍 Dosquebradas</div></div></div></div>
+      <div class="testimonial-card reveal"><div class="stars">★★★★★</div><p class="testimonial-text">Lavadora dañada una semana. Vinieron al día siguiente y quedó perfecta. Profesionales, limpios y con garantía. Los volvería a llamar sin dudar.</p><div class="testimonial-author"><div class="author-avatar">CM</div><div><div class="author-name">Carolina Muñoz</div><div class="author-loc">📍 Santa Rosa de Cabal</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--off-white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="#ffffff" d="M0,30 C360,70 1080,-10 1440,30 L1440,0 L0,0 Z"/></svg></div>
+
+<section id="nosotros" style="background:var(--white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">¿Por qué elegirnos?</p>
+      <h2 class="section-title">Confianza, experiencia<br/>y profesionalismo</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon">🏅</div><div class="why-body"><h4>Técnicos Certificados</h4><p>Personal capacitado con años de experiencia en electrodomésticos de todas las marcas.</p></div></div>
+      <div class="why-card reveal"><div class="why-icon">🔧</div><div class="why-body"><h4>Repuestos de Calidad</h4><p>Utilizamos repuestos originales y de alta calidad para garantizar la durabilidad del trabajo.</p></div></div>
+      <div class="why-card reveal"><div class="why-icon">🏠</div><div class="why-body"><h4>Servicio a Domicilio</h4><p>Nos desplazamos hasta tu casa o negocio sin necesidad de mover el equipo.</p></div></div>
+      <div class="why-card reveal"><div class="why-icon">💬</div><div class="why-body"><h4>Presupuesto Honesto</h4><p>Precio claro antes de iniciar cualquier trabajo. Sin sorpresas.</p></div></div>
+      <div class="why-card reveal"><div class="why-icon">⚡</div><div class="why-body"><h4>Atención el Mismo Día</h4><p>Respondemos de inmediato por WhatsApp y coordinamos visita el mismo día cuando es posible.</p></div></div>
+      <div class="why-card reveal"><div class="why-icon">🛡️</div><div class="why-body"><h4>Garantía en el Trabajo</h4><p>Todos nuestros servicios tienen garantía para tu total tranquilidad.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="var(--off-white)" d="M0,20 C480,60 960,0 1440,40 L1440,60 L0,60 Z"/></svg></div>
+
+<section id="marcas" style="background:var(--off-white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Multimarcas</p>
+      <h2 class="section-title">Trabajamos con todas las marcas</h2>
+      <p class="section-desc">No importa la marca de tu electrodoméstico, nuestros técnicos están capacitados para atenderlo.</p>
+    </div>
+    <div class="brands-wrap reveal">
+      <span class="brand-pill">Samsung</span><span class="brand-pill">LG</span><span class="brand-pill">Whirlpool</span><span class="brand-pill">Haceb</span><span class="brand-pill">Mabe</span><span class="brand-pill">Electrolux</span><span class="brand-pill">Bosch</span><span class="brand-pill">Challenger</span><span class="brand-pill">Kalley</span><span class="brand-pill">Centrales</span><span class="brand-pill">Daewoo</span><span class="brand-pill">Panasonic</span><span class="brand-pill">General Electric</span><span class="brand-pill">Indurama</span><span class="brand-pill">Weston</span><span class="brand-pill">Y muchas más…</span>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--off-white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="#ffffff" d="M0,40 C480,0 960,80 1440,20 L1440,0 L0,0 Z"/></svg></div>
+
+<section id="faq" style="background:var(--white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Preguntas Frecuentes</p>
+      <h2 class="section-title">Lo que más nos preguntan</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-question" aria-expanded="false">¿Cobran la revisión del electrodoméstico? <span class="faq-arrow">▾</span></button><div class="faq-answer">No. Si toma el arreglo con nosotros, la revisión no tiene costo. El técnico va, revisa y usted decide.</div></div>
+      <div class="faq-item reveal"><button class="faq-question" aria-expanded="false">¿En qué ciudades atienden? <span class="faq-arrow">▾</span></button><div class="faq-answer">Atendemos en Pereira, Dosquebradas y Santa Rosa de Cabal, Risaralda.</div></div>
+      <div class="faq-item reveal"><button class="faq-question" aria-expanded="false">¿Cuál es el horario de atención? <span class="faq-arrow">▾</span></button><div class="faq-answer">De lunes a sábado de 7:00 AM a 7:00 PM. Puede escribirnos por WhatsApp en cualquier momento.</div></div>
+      <div class="faq-item reveal"><button class="faq-question" aria-expanded="false">¿Qué electrodomésticos reparan? <span class="faq-arrow">▾</span></button><div class="faq-answer">Reparamos neveras, nevecon, enfriadores, lavadoras de carga frontal y superior, y calentadores de agua a gas natural y propano.</div></div>
+      <div class="faq-item reveal"><button class="faq-question" aria-expanded="false">¿Tienen garantía en los trabajos? <span class="faq-arrow">▾</span></button><div class="faq-answer">Sí. Todos nuestros servicios tienen garantía. Utilizamos repuestos originales y de alta calidad.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white);"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" height="60"><path fill="var(--off-white)" d="M0,20 C480,60 960,0 1440,40 L1440,60 L0,60 Z"/></svg></div>
+
+<section id="horario" style="background:var(--off-white);">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-tag">Horario de Atención</p>
+      <h2 class="section-title">Estamos disponibles<br/>para servirte</h2>
+    </div>
+    <div class="schedule-card reveal">
+      <div class="sched-block"><h3>📅 Días de Atención</h3><p><strong>Lunes a Sábado</strong></p><p style="margin-top:.4rem;">Domingos y festivos:<br/>consultar disponibilidad</p></div>
+      <div class="sched-block"><h3>🕖 Horario</h3><div class="sched-time">7:00 AM – 7:00 PM</div><p style="margin-top:.5rem;">¡Escríbenos por WhatsApp en cualquier momento!</p></div>
+    </div>
+    <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="https://wa.me/573016158158?text=Hola%20ProHogar%20T%C3%A9cnicos%20A%26F%2C%20necesito%20un%20servicio%20t%C3%A9cnico." target="_blank" rel="noopener" class="btn btn-whatsapp" style="font-size:1.05rem;padding:1rem 2.2rem;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.552 4.103 1.516 5.836L.057 23.54a.75.75 0 0 0 .918.918l5.695-1.459A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.937 0-3.758-.524-5.32-1.437l-.381-.224-3.944 1.011 1.03-3.853-.244-.396A9.964 9.964 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="tel:+573016158158" class="btn" style="font-size:1.05rem;padding:1rem 2.2rem;background:var(--royal);color:#fff;box-shadow:0 6px 24px rgba(26,63,184,.4);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        📞 301 615 8158
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="font-size:1.05rem;"><strong>ProHogar Técnicos A&amp;F</strong> · Servicio Técnico Multimarcas</p>
+  <p style="margin-top:.5rem;">📍 Pereira · Dosquebradas · Santa Rosa de Cabal · Risaralda, Colombia</p>
+  <p style="margin-top:.4rem;">📞 <a href="tel:+573016158158">301 615 8158</a> &nbsp;|&nbsp; 🕖 Lunes a Sábado · 7:00 AM – 7:00 PM</p>
+  <div class="footer-links">
+    <a href="#servicios">Servicios</a><a href="#cobertura">Cobertura</a><a href="#testimonios">Opiniones</a><a href="#nosotros">Nosotros</a><a href="#faq">Preguntas</a><a href="#horario">Horario</a>
+  </div>
+  <p style="margin-top:1.2rem;font-size:.78rem;opacity:.4;">© 2025 ProHogar Técnicos A&amp;F · Todos los derechos reservados</p>
+</footer>
+
+<!-- BOTONES FLOTANTES -->
+<div class="sticky-cta">
+  <a href="https://wa.me/573016158158?text=Hola%20ProHogar%20T%C3%A9cnicos%20A%26F%2C%20necesito%20un%20servicio%20t%C3%A9cnico." target="_blank" rel="noopener" class="sticky-btn sticky-wa">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.552 4.103 1.516 5.836L.057 23.54a.75.75 0 0 0 .918.918l5.695-1.459A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.937 0-3.758-.524-5.32-1.437l-.381-.224-3.944 1.011 1.03-3.853-.244-.396A9.964 9.964 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+  <a href="tel:+573016158158" class="sticky-btn sticky-call">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function animateCounter(el, target) {
+    let start = 0, step = target / (1800/16);
+    const suffix = target === 98 ? '%' : '+';
+    const t = setInterval(() => {
+      start += step;
+      if (start >= target) { el.textContent = target + suffix; clearInterval(t); }
+      else { el.textContent = Math.floor(start) + suffix; }
+    }, 16);
+  }
+  const cObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target, parseInt(e.target.dataset.target)); cObs.unobserve(e.target); } });
+  }, {threshold: 0.4});
+  document.querySelectorAll('.stat-num').forEach(c => cObs.observe(c));
+
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+</script>
+
+</body>
+</html>
